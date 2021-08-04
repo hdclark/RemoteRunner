@@ -27,7 +27,6 @@ caffeinate -i -m \
   $RSYNC \
         -rtvPL \
         --rsync-path="nice -n 19 /usr/bin/rsync" \
-        --size-only \
         --inplace \
         --bwlimit=150 \
         --include='*txt'  --include='*TXT' \
