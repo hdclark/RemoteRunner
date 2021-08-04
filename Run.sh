@@ -5,6 +5,21 @@
 #
 ( caffeinate -i -m -s -t 60 || true ) & 
 
+
+#
+# Ensure the port-forwarding service is enabled and running.
+#
+# com.halclark.autosshportfwd
+# com.halclark.syncphotos
+#
+#launchctl unload  /Library/LaunchAgents/com.halclark.autosshportfwd.plist 
+#launchctl load -w /Library/LaunchAgents/com.halclark.autosshportfwd.plist 
+#sudo launchctl enable system/com.halclark.autosshportfwd
+#sudo launchctl enable user/com.halclark.syncphotos
+#sudo launchctl print system/com.halclark.autosshportfwd
+#sudo launchctl print user/com.halclark.syncphotos
+
+
 #
 # Send up-to-date info about the system.
 #
