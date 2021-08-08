@@ -74,5 +74,5 @@ caffeinate -i -m \
         --include='*/' \
         --exclude='*' \
         -e 'ssh -t -A root@www.halclark.ca  "ssh -t -p 2322 sarah@localhost" ' \
-        '/Volumes/NadinesPhotos/ \
+        '/Volumes/NadinesPhotos/' \
         :'/media/sarah/8T_drive_C/NadinesPhotos/'
