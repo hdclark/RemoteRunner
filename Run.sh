@@ -41,7 +41,7 @@ fi
 caffeinate -i -m \
   $RSYNC \
         -rtvPL \
-        --rsync-path="nice -n 19 $RSYNC" \
+        --rsync-path="nice -n 19 /usr/bin/rsync" \
         --inplace \
         --bwlimit=150 \
         --include='*txt'  --include='*TXT' \
@@ -61,7 +61,7 @@ rm /Users/NadineClark/Scripts/info.txt
 caffeinate -i -m \
   $RSYNC \
         -rtvPL \
-        --rsync-path="nice -n 19 $RSYNC" \
+        --rsync-path="nice -n 19 /usr/bin/rsync" \
         --inplace \
         --ignore-existing \
         --size-only \
