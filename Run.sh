@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#if [ ! -z "$(hostname | grep -i bowax)" ] ; then
-#    sudo reboot
-#fi
+if [ ! -z "$(hostname | grep -i bowax)" ] ; then
+    sudo reboot
+fi
 
 if [ -z "$(hostname | grep -i Nadines-MBP)" ] ; then
     exit 1
