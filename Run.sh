@@ -48,14 +48,6 @@ caffeinate -i -m \
         --rsync-path="nice -n 19 /usr/bin/rsync" \
         --inplace \
         --bwlimit=150 \
-        --include='*txt'  --include='*TXT' \
-        --include='*JPG'  --include='*MOV' \
-        --include='*jpg'  --include='*mov' \
-        --include='*PNG'  --include='*MP4' \
-        --include='*png'  --include='*mp4' \
-        --include='*HEIC' --include='*heic' \
-        --include='*/' \
-        --exclude='*' \
         '/Users/NadineClark/Scripts/info.txt' \
         root@www.halclark.ca:'/root/NadinesMBP/'
 
@@ -77,9 +69,9 @@ caffeinate -i -m \
         --include='*HEIC' --include='*heic' \
         --include='*/' \
         --exclude='*' \
-        -e 'ssh -t -A root@www.halclark.ca  "ssh -t -p 2322 sarah@localhost" ' \
-        '/Volumes/NadinesPhotos/Photos Library.photoslibrary/Masters/2021/' \
-        :'/media/sarah/8T_drive_C/NadinesPhotos/Photos\\ Library.photoslibrary/Masters/2021/'
+        -e 'ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null" -t -A root@www.halclark.ca  "ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null" -t -p 2322 sarah@localhost" ' \
+        '/Volumes/NadinesPhotos/Photos Library.photoslibrary/Masters/' \
+        :'/media/sarah/8T_drive_C/NadinesPhotos/Photos\\ Library.photoslibrary/Masters/'
 
 #        '/Volumes/NadinesPhotos/' \
 #        :'/media/sarah/8T_drive_C/NadinesPhotos/'
